@@ -18,7 +18,7 @@ def main():
     Flower.delete().execute()
     rose = add_flower('Rose')
     poppy = add_flower('Poppy')
-    poppy2 = add_flower('Poppy')
+    poppy2 = add_flower('Poppy')  # UNIQUE constraint failed: flower.name
     print(rose, poppy, poppy2)  # Rose Poppy None 
 
 
